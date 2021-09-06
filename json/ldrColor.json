@@ -1,0 +1,702 @@
+[
+  {
+    "num": "16",
+    "name": "CurrentColor",
+    "rgb": "#000000"
+  },
+  {
+    "num": "118",
+    "name": "Aqua",
+    "rgb": "#B2D6D0"
+  },
+  {
+    "num": "0",
+    "name": "Black",
+    "rgb": "#04121C"
+  },
+  {
+    "num": "1",
+    "name": "Blue",
+    "rgb": "#0054BE"
+  },
+  {
+    "num": "89",
+    "name": "Blue_Violet",
+    "rgb": "#4B60DA"
+  },
+  {
+    "num": "10",
+    "name": "Bright_Green",
+    "rgb": "#4A9E49"
+  },
+  {
+    "num": "212",
+    "name": "Bright_Light_Blue",
+    "rgb": "#85C0E0"
+  },
+  {
+    "num": "191",
+    "name": "Bright_Light_Orange",
+    "rgb": "#F7BA3C"
+  },
+  {
+    "num": "226",
+    "name": "Bright_Light_Yellow",
+    "rgb": "#FEEF39"
+  },
+  {
+    "num": "29",
+    "name": "Bright_Pink",
+    "rgb": "#E3ACC7"
+  },
+  {
+    "num": "6",
+    "name": "Brown",
+    "rgb": "#573826"
+  },
+  {
+    "num": "60",
+    "name": "Chrome_Antique_Brass",
+    "rgb": "#63594B"
+  },
+  {
+    "num": "64",
+    "name": "Chrome_Black",
+    "rgb": "#1A2933"
+  },
+  {
+    "num": "61",
+    "name": "Chrome_Blue",
+    "rgb": "#6B95BE"
+  },
+  {
+    "num": "334",
+    "name": "Chrome_Gold",
+    "rgb": "#BAA43C"
+  },
+  {
+    "num": "62",
+    "name": "Chrome_Green",
+    "rgb": "#3BB270"
+  },
+  {
+    "num": "63",
+    "name": "Chrome_Pink",
+    "rgb": "#A94C8D"
+  },
+  {
+    "num": "383",
+    "name": "Chrome_Silver",
+    "rgb": "#DFDFDF"
+  },
+  {
+    "num": "134",
+    "name": "Copper",
+    "rgb": "#954926"
+  },
+  {
+    "num": "321",
+    "name": "Dark_Azure",
+    "rgb": "#1397D6"
+  },
+  {
+    "num": "272",
+    "name": "Dark_Blue",
+    "rgb": "#0C315A"
+  },
+  {
+    "num": "23",
+    "name": "Dark_Blue_Violet",
+    "rgb": "#1F31AF"
+  },
+  {
+    "num": "72",
+    "name": "Dark_Bluish_Gray",
+    "rgb": "#6B6D67"
+  },
+  {
+    "num": "308",
+    "name": "Dark_Brown",
+    "rgb": "#442800"
+  },
+  {
+    "num": "86",
+    "name": "Dark_Flesh",
+    "rgb": "#7B4F39"
+  },
+  {
+    "num": "8",
+    "name": "Dark_Gray",
+    "rgb": "#6C6D5B"
+  },
+  {
+    "num": "288",
+    "name": "Dark_Green",
+    "rgb": "#174531"
+  },
+  {
+    "num": "484",
+    "name": "Dark_Orange",
+    "rgb": "#A85400"
+  },
+  {
+    "num": "5",
+    "name": "Dark_Pink",
+    "rgb": "#C76F9F"
+  },
+  {
+    "num": "85",
+    "name": "Dark_Purple",
+    "rgb": "#3E3590"
+  },
+  {
+    "num": "320",
+    "name": "Dark_Red",
+    "rgb": "#710D0E"
+  },
+  {
+    "num": "28",
+    "name": "Dark_Tan",
+    "rgb": "#948972"
+  },
+  {
+    "num": "3",
+    "name": "Dark_Turquoise",
+    "rgb": "#00828E"
+  },
+  {
+    "num": "366",
+    "name": "Earth_Orange",
+    "rgb": "#F99B1B"
+  },
+  {
+    "num": "450",
+    "name": "Fabuland_Brown",
+    "rgb": "#B67B50"
+  },
+  {
+    "num": "178",
+    "name": "Flat_Dark_Gold",
+    "rgb": "#B3873D"
+  },
+  {
+    "num": "179",
+    "name": "Flat_Silver",
+    "rgb": "#888687"
+  },
+  {
+    "num": "92",
+    "name": "Flesh",
+    "rgb": "#CF9067"
+  },
+  {
+    "num": "117",
+    "name": "Glitter_Trans_Clear",
+    "rgb": "#FEFEFE"
+  },
+  {
+    "num": "114",
+    "name": "Glitter_Trans_Dark_Pink",
+    "rgb": "#DF6695"
+  },
+  {
+    "num": "129",
+    "name": "Glitter_Trans_Purple",
+    "rgb": "#630060"
+  },
+  {
+    "num": "21",
+    "name": "Glow_In_Dark_Opaque",
+    "rgb": "#DFFEAF"
+  },
+  {
+    "num": "294",
+    "name": "Glow_In_Dark_Trans",
+    "rgb": "#BCC5AC"
+  },
+  {
+    "num": "2",
+    "name": "Green",
+    "rgb": "#24793D"
+  },
+  {
+    "num": "31",
+    "name": "Lavender",
+    "rgb": "#E0D4EC"
+  },
+  {
+    "num": "323",
+    "name": "Light_Aqua",
+    "rgb": "#BCDBD7"
+  },
+  {
+    "num": "9",
+    "name": "Light_Blue",
+    "rgb": "#B3D1E2"
+  },
+  {
+    "num": "71",
+    "name": "Light_Bluish_Gray",
+    "rgb": "#9FA4A8"
+  },
+  {
+    "num": "78",
+    "name": "Light_Flesh",
+    "rgb": "#F5D6B2"
+  },
+  {
+    "num": "7",
+    "name": "Light_Gray",
+    "rgb": "#9AA09C"
+  },
+  {
+    "num": "17",
+    "name": "Light_Green",
+    "rgb": "#C1D9B7"
+  },
+  {
+    "num": "120",
+    "name": "Light_Lime",
+    "rgb": "#e2db5f"
+  },
+  {
+    "num": "125",
+    "name": "Light_Orange",
+    "rgb": "#F8B960"
+  },
+  {
+    "num": "77",
+    "name": "Light_Pink",
+    "rgb": "#FDCBCE"
+  },
+  {
+    "num": "69",
+    "name": "Light_Purple",
+    "rgb": "#CC6197"
+  },
+  {
+    "num": "100",
+    "name": "Light_Salmon",
+    "rgb": "#FDB9BC"
+  },
+  {
+    "num": "11",
+    "name": "Light_Turquoise",
+    "rgb": "#54A4AE"
+  },
+  {
+    "num": "20",
+    "name": "Light_Violet",
+    "rgb": "#C8C9E1"
+  },
+  {
+    "num": "18",
+    "name": "Light_Yellow",
+    "rgb": "#FAE595"
+  },
+  {
+    "num": "27",
+    "name": "Lime",
+    "rgb": "#BAE80A"
+  },
+  {
+    "num": "313",
+    "name": "Maersk_Blue",
+    "rgb": "#53A8C7"
+  },
+  {
+    "num": "26",
+    "name": "Magenta",
+    "rgb": "#913877"
+  },
+  {
+    "num": "322",
+    "name": "Medium_Azure",
+    "rgb": "#3DC1DC"
+  },
+  {
+    "num": "73",
+    "name": "Medium_Blue",
+    "rgb": "#5B9CD0"
+  },
+  {
+    "num": "84",
+    "name": "Medium_Dark_Flesh",
+    "rgb": "#CB6F29"
+  },
+  {
+    "num": "351",
+    "name": "Medium_Dark_Pink",
+    "rgb": "#F684B0"
+  },
+  {
+    "num": "74",
+    "name": "Medium_Green",
+    "rgb": "#72DBA0"
+  },
+  {
+    "num": "30",
+    "name": "Medium_Lavender",
+    "rgb": "#AB77B9"
+  },
+  {
+    "num": "115",
+    "name": "Medium_Lime",
+    "rgb": "#C6D13B"
+  },
+  {
+    "num": "462",
+    "name": "Medium_Orange",
+    "rgb": "#FEA60A"
+  },
+  {
+    "num": "112",
+    "name": "Medium_Violet",
+    "rgb": "#6773C9"
+  },
+  {
+    "num": "137",
+    "name": "Metal_Blue",
+    "rgb": "#5576B9"
+  },
+  {
+    "num": "83",
+    "name": "Metallic_Black",
+    "rgb": "#192730"
+  },
+  {
+    "num": "82",
+    "name": "Metallic_Gold",
+    "rgb": "#DAAB33"
+  },
+  {
+    "num": "81",
+    "name": "Metallic_Green",
+    "rgb": "#889A5E"
+  },
+  {
+    "num": "80",
+    "name": "Metallic_Silver",
+    "rgb": "#A4A8B3"
+  },
+  {
+    "num": "79",
+    "name": "Milky_White",
+    "rgb": "#FEFEFE"
+  },
+  {
+    "num": "330",
+    "name": "Olive_Green",
+    "rgb": "#9A9959"
+  },
+  {
+    "num": "25",
+    "name": "Orange",
+    "rgb": "#FD8917"
+  },
+  {
+    "num": "148",
+    "name": "Pearl_Dark_Gray",
+    "rgb": "#565756"
+  },
+  {
+    "num": "297",
+    "name": "Pearl_Gold",
+    "rgb": "#CB9B2A"
+  },
+  {
+    "num": "142",
+    "name": "Pearl_Light_Gold",
+    "rgb": "#DBBD60"
+  },
+  {
+    "num": "135",
+    "name": "Pearl_Light_Gray",
+    "rgb": "#9BA2A7"
+  },
+  {
+    "num": "150",
+    "name": "Pearl_Very_Light_Gray",
+    "rgb": "#BABCBB"
+  },
+  {
+    "num": "183",
+    "name": "Pearl_White",
+    "rgb": "#F1F2F1"
+  },
+  {
+    "num": "13",
+    "name": "Pink",
+    "rgb": "#FB96AB"
+  },
+  {
+    "num": "22",
+    "name": "Purple",
+    "rgb": "#80007A"
+  },
+  {
+    "num": "4",
+    "name": "Red",
+    "rgb": "#C81908"
+  },
+  {
+    "num": "70",
+    "name": "Reddish_Brown",
+    "rgb": "#572911"
+  },
+  {
+    "num": "256",
+    "name": "Rubber_Black",
+    "rgb": "#202020"
+  },
+  {
+    "num": "273",
+    "name": "Rubber_Blue",
+    "rgb": "#0032B1"
+  },
+  {
+    "num": "406",
+    "name": "Rubber_Dark_Blue",
+    "rgb": "#001C67"
+  },
+  {
+    "num": "504",
+    "name": "Rubber_Flat_Silver",
+    "rgb": "#888687"
+  },
+  {
+    "num": "496",
+    "name": "Rubber_Light_Bluish_Gray",
+    "rgb": "#A2A1A3"
+  },
+  {
+    "num": "375",
+    "name": "Rubber_Light_Gray",
+    "rgb": "#C0C1C0"
+  },
+  {
+    "num": "490",
+    "name": "Rubber_Lime",
+    "rgb": "#D6EF00"
+  },
+  {
+    "num": "350",
+    "name": "Rubber_Orange",
+    "rgb": "#CF650F"
+  },
+  {
+    "num": "449",
+    "name": "Rubber_Purple",
+    "rgb": "#80007A"
+  },
+  {
+    "num": "324",
+    "name": "Rubber_Red",
+    "rgb": "#C30025"
+  },
+  {
+    "num": "67",
+    "name": "Rubber_Trans_Clear",
+    "rgb": "#FEFEFE"
+  },
+  {
+    "num": "66",
+    "name": "Rubber_Trans_Yellow",
+    "rgb": "#C9AF00"
+  },
+  {
+    "num": "511",
+    "name": "Rubber_White",
+    "rgb": "#F9F9F9"
+  },
+  {
+    "num": "65",
+    "name": "Rubber_Yellow",
+    "rgb": "#F4CC2E"
+  },
+  {
+    "num": "216",
+    "name": "Rust",
+    "rgb": "#B20F03"
+  },
+  {
+    "num": "12",
+    "name": "Salmon",
+    "rgb": "#F16F5D"
+  },
+  {
+    "num": "379",
+    "name": "Sand_Blue",
+    "rgb": "#587083"
+  },
+  {
+    "num": "378",
+    "name": "Sand_Green",
+    "rgb": "#9FBBAB"
+  },
+  {
+    "num": "373",
+    "name": "Sand_Purple",
+    "rgb": "#835D83"
+  },
+  {
+    "num": "335",
+    "name": "Sand_Red",
+    "rgb": "#D57471"
+  },
+  {
+    "num": "232",
+    "name": "Sky_Blue",
+    "rgb": "#55BDD5"
+  },
+  {
+    "num": "75",
+    "name": "Speckle_Black_Copper",
+    "rgb": "#000000"
+  },
+  {
+    "num": "133",
+    "name": "Speckle_Black_Gold",
+    "rgb": "#000000"
+  },
+  {
+    "num": "132",
+    "name": "Speckle_Black_Silver",
+    "rgb": "#000000"
+  },
+  {
+    "num": "76",
+    "name": "Speckle_Dark_Bluish_Gray_Silver",
+    "rgb": "#625E60"
+  },
+  {
+    "num": "19",
+    "name": "Tan",
+    "rgb": "#E3CC9D"
+  },
+  {
+    "num": "40",
+    "name": "Trans_Black",
+    "rgb": "#625E51"
+  },
+  {
+    "num": "35",
+    "name": "Trans_Bright_Green",
+    "rgb": "#55E545"
+  },
+  {
+    "num": "47",
+    "name": "Trans_Clear",
+    "rgb": "#FBFBFB"
+  },
+  {
+    "num": "33",
+    "name": "Trans_Dark_Blue",
+    "rgb": "#001F9F"
+  },
+  {
+    "num": "37",
+    "name": "Trans_Dark_Pink",
+    "rgb": "#DE6594"
+  },
+  {
+    "num": "34",
+    "name": "Trans_Green",
+    "rgb": "#227740"
+  },
+  {
+    "num": "43",
+    "name": "Trans_Light_Blue",
+    "rgb": "#ADE8EE"
+  },
+  {
+    "num": "44",
+    "name": "Trans_Light_Purple",
+    "rgb": "#956F9E"
+  },
+  {
+    "num": "41",
+    "name": "Trans_Medium_Blue",
+    "rgb": "#5499B6"
+  },
+  {
+    "num": "42",
+    "name": "Trans_Neon_Green",
+    "rgb": "#BFFE00"
+  },
+  {
+    "num": "38",
+    "name": "Trans_Neon_Orange",
+    "rgb": "#FE7F0C"
+  },
+  {
+    "num": "54",
+    "name": "Trans_Neon_Yellow",
+    "rgb": "#D9AF00"
+  },
+  {
+    "num": "57",
+    "name": "Trans_Orange",
+    "rgb": "#EF8E1B"
+  },
+  {
+    "num": "45",
+    "name": "Trans_Pink",
+    "rgb": "#FB96AB"
+  },
+  {
+    "num": "52",
+    "name": "Trans_Purple",
+    "rgb": "#A4A4CA"
+  },
+  {
+    "num": "36",
+    "name": "Trans_Red",
+    "rgb": "#C81908"
+  },
+  {
+    "num": "39",
+    "name": "Trans_Very_Light_Blue",
+    "rgb": "#C0DEEF"
+  },
+  {
+    "num": "46",
+    "name": "Trans_Yellow",
+    "rgb": "#F4CC2E"
+  },
+  {
+    "num": "151",
+    "name": "Very_Light_Bluish_Gray",
+    "rgb": "#E5E2DF"
+  },
+  {
+    "num": "503",
+    "name": "Very_Light_Gray",
+    "rgb": "#E5E2D9"
+  },
+  {
+    "num": "68",
+    "name": "Very_Light_Orange",
+    "rgb": "#F2CE9A"
+  },
+  {
+    "num": "110",
+    "name": "Violet",
+    "rgb": "#4253A2"
+  },
+  {
+    "num": "15",
+    "name": "White",
+    "rgb": "#FEFEFE"
+  },
+  {
+    "num": "14",
+    "name": "Yellow",
+    "rgb": "#F1CC36"
+  },
+  {
+    "num": "326",
+    "name": "Yellowish_Green",
+    "rgb": "#DEEDA4"
+  }
+]
