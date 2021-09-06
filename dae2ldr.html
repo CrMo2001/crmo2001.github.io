@@ -131,9 +131,9 @@
         for (let i = 0; i < effects.length; i++) {
             let colorStr = "#";
             let colorArr = effects[i].getElementsByTagName("diffuse")[0];
-            if (colorArr === null) colorStr = "000000ff";
+            if (colorArr == null) colorStr = "#000000ff";
             else colorArr = colorArr.getElementsByTagName("color")[0];
-            if (colorArr === null) colorStr = "000000ff";
+            if (colorArr == null) colorStr = "#000000ff";
             else {
                 colorArr = colorArr.innerHTML.split(" ")
                     .filter(item => item !== " ")
@@ -395,7 +395,7 @@
         for(let i in nodeDefinitionTexts) {
             text += nodeDefinitionTexts[i];
         }
-
+        console.log(text.length);
         download(outputFilename, text);
     }
 
