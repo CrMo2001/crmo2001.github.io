@@ -245,8 +245,8 @@
 
             let definitionText = "0 FILE " + nodeId + "\n";
 
-            for (let i = 1; i < node.childNodes.length; i += 2) {
-                let currentChildNode = node.childNodes[i];
+            for (let i = 0; i < node.children.length; i ++) {
+                let currentChildNode = node.children[i];
                 if (currentChildNode.tagName === "matrix") {
                     transformMatrix = Matrix(currentChildNode.innerHTML);
                 } else if (currentChildNode.tagName === "node") {
@@ -283,9 +283,9 @@
             }
 
             let geometry = model.getElementById(geometryId);
-            for (let i = 1; i < geometry.childNodes.length; i += 2) {
-                if (geometry.childNodes[i].tagName !== "mesh") continue;
-                definitionText += parseMesh(geometry.childNodes[i]);
+            for (let i = 0; i < geometry.children.length; i ++) {
+                if (geometry.children[i].tagName !== "mesh") continue;
+                definitionText += parseMesh(geometry.children[i]);
             }
 
             function parseMesh(mesh) {
@@ -312,8 +312,8 @@
                 console.log("    triangle count: " + triangleCount);
                 console.log("    triangle color: " + lDrawColor);
 
-                for (let i = 1; i < triangle.childNodes.length; i += 2) {
-                    let currentNode = triangle.childNodes[i];
+                for (let i = 0; i < triangle.children.length; i ++) {
+                    let currentNode = triangle.children[i];
                     if (currentNode.tagName === "input") {
                         totalInput++;
                         if (currentNode.getAttribute("semantic") === "VERTEX") {
@@ -345,10 +345,10 @@
             let source;
             let floatArray = [];
 
-            for (let i = 1; i < vertex.childNodes.length; i += 2) {
-                if (vertex.childNodes[i].getAttribute("semantic") === "POSITION") {
+            for (let i = 0; i < vertex.children.length; i ++) {
+                if (vertex.children[i].getAttribute("semantic") === "POSITION") {
                     source = model.getElementById(
-                        vertex.childNodes[i].getAttribute("source").substr(1)
+                        vertex.children[i].getAttribute("source").substr(1)
                     )
                     break;
                 }
@@ -366,8 +366,8 @@
                 let count = accessor[i].getAttribute("count");
                 let stride = accessor[i].getAttribute("stride");
                 let parameterOffset = 0;
-                for (let j = 1; j < accessor[i].childNodes.length; j += 2) {
-                    let parameter = accessor[i].childNodes[j];
+                for (let j = 0; j < accessor[i].children.length; j ++) {
+                    let parameter = accessor[i].children[j];
                     let parameterName = parameter.getAttribute("name");
                     if (parameterName === "X" || parameterName === "Y" || parameterName === "Z") {
                         for (let k = 0; k < count; k++) {
@@ -385,9 +385,9 @@
         let scene = model.getElementById(sceneId);
         console.log("scene id = " + sceneId);
 
-        for (let i = 1; i < scene.childNodes.length; i += 2) {
-            if(scene.childNodes[i].tagName === "node") {
-                text += parseNode(scene.childNodes[i]);
+        for (let i = 0; i < scene.children.length; i ++) {
+            if(scene.children[i].tagName === "node") {
+                text += parseNode(scene.children[i]);
             }
         }
         text += "0 NOFILE\n";
