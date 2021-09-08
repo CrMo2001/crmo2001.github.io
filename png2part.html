@@ -98,7 +98,7 @@
 
     function changeHeight() {
         if ($("#keepAspectRatio").is(":checked")) {
-            $("#width").val(Number($("#height").val()) / imageAspectRatio);
+            $("#width").val(Number($("#height").val()) * imageAspectRatio);
         }
     }
 
