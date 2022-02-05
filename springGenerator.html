@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spring generator</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a434c">
+    <div class="container-fluid">
+        <div class="navbar-brand">spring generator</div>
+        <div class="navbar-text">Generate shock absorbers for stud.io | by CrMo2001</div>
+    </div>
+
+</nav>
+<div class="py-4 bg-light"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <p>
+                1. 选择避震器类型：<br>
+            </p>
+            <div id="selectType">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="ss" name="springType" value="ss" checked>
+                    <label class="form-check-label" for="ss"><img src="img/sss.png"
+                                                                  alt="short soft shock absorber"><span
+                            style="margin-left: 10px">软/短</span></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="sh" name="springType" value="sh">
+                    <label class="form-check-label" for="sh"><img src="img/shs.png"
+                                                                  alt="short hard shock absorber"><span
+                            style="margin-left: 10px">硬/短</span></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="ls" name="springType" value="ls">
+                    <label class="form-check-label" for="ls"><img src="img/lss.png" alt="long soft shock absorber"><span
+                            style="margin-left: 10px">软/长</span></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="lh" name="springType" value="lh">
+                    <label class="form-check-label" for="lh"><img src="img/lhs.png" alt="long hard shock absorber"><span
+                            style="margin-left: 10px">硬/长</span></label>
+                </div>
+            </div>
+            <hr/>
+            <p>
+                2. 设置长度<br>
+                <span class="text-black-50">
+                弹簧总长的乐高单位数
+            </span>
+            </p>
+            <label>
+                <input id="lengthSlide" type="range" min="5.5" max="6.5" value="6.5" step="0.05"/>
+            </label>
+            <label>
+                <input id="lengthInput" type="number" min="5.5" max="6.5" value="6.5" step="0.05" class="form-control"/>
+            </label>
+
+            <hr/>
+            <p>
+                3. 下载生成的避震器文件<br>
+                <span class="text-black-50">用part designer打开，即可导入stud.io</span>
+            </p>
+            <button class="form-control btn-lg btn-outline-light" id="fileOutput" style="background-color: #3a434c">
+                Download
+            </button>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+<div class="py-4 bg-light"></div>
+<footer class="text-center text-black-50" style="background-color: #fff">
+    Copyright &copy; 2021 CrMo2001 <br>
+</footer>
+
+<script>
+    let lengthInput = document.getElementById("lengthInput");
+    let lengthSlide = document.getElementById("lengthSlide");
+    let springType = "ss";
+    let springData = {
+        "ss": {
+            "name": "731c06",
+            "description": "Technic Shock Absorber 6.5L Soft Spring",
+            "lengthMin": 5.5, "lengthMax": 6.5,
+            "r1": 7.25, "r2": 0.75,
+            "screwBegin": 56.75,
+            "parts": [
+                {
+                    "name": "1 0 0 0 1 0 0 0 1 4254.dat",
+                    "color": 0,
+                    "p1": [0, 90, 0], "p2": [0, 20, 0]
+                }, {
+                    "name": "1 0 0 0 1 0 0 0 1 4255.dat",
+                    "color": 16,
+                    "p1": [0, 0, 0], "p2": [0, 0, 0]
+                }
+            ],
+            "conns": [
+                {
+                    "type": "0 PE_CONN 0 2",
+                    "rotate": "0 -1 0 0 0 -1 1 0 0",
+                    "p1": [0, 0, -10], "p2": [0, 0, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }, {
+                    "type": "0 PE_CONN 0 2",
+                    "rotate": "0 -1 0 0 0 -1 1 0 0",
+                    "p1": [0, 90, -10], "p2": [0, 20, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }
+            ],
+            "screws": [
+                {"f1": 0, "f2": 0, "l": 16},
+                {"f1": 0.09375, "f2": 0, "l": 32},
+                {"f1": 0.22917, "f2": 0.27778, "l": 72},
+                {"f1": 0.09375, "f2": 0, "l": 32},
+                {"f1": 0, "f2": 0, "l": 16}
+            ]
+        },
+        "sh": {
+            "name": "731c04",
+            "description": "Technic Shock Absorber 6.5L Hard Spring",
+            "lengthMin": 5.5, "lengthMax": 6.5,
+            "r1": 7.25, "r2": 0.75,
+            "screwBegin": 56.75,
+            "parts": [
+                {
+                    "name": "1 0 0 0 1 0 0 0 1 4254.dat",
+                    "color": 0,
+                    "p1": [0, 90, 0], "p2": [0, 20, 0]
+                }, {
+                    "name": "1 0 0 0 1 0 0 0 1 4255.dat",
+                    "color": 16,
+                    "p1": [0, 0, 0], "p2": [0, 0, 0]
+                }
+            ],
+            "conns": [
+                {
+                    "type": "0 PE_CONN 0 2",
+                    "rotate": "0 -1 0 0 0 -1 1 0 0",
+                    "p1": [0, 0, -10], "p2": [0, 0, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }, {
+                    "type": "0 PE_CONN 0 2",
+                    "rotate": "0 -1 0 0 0 -1 1 0 0",
+                    "p1": [0, 90, -10], "p2": [0, 20, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }
+            ],
+            "screws": [
+                {"f1": 0, "f2": 0, "l": 16},
+                {"f1": 0.09271, "f2": 0, "l": 32},
+                {"f1": 0.12921, "f2": 0.41667, "l": 24},
+                {"f1": 0.09271, "f2": 0, "l": 96},
+                {"f1": 0.12921, "f2": 0.41667, "l": 24},
+                {"f1": 0.09271, "f2": 0, "l": 48},
+                {"f1": 0, "f2": 0, "l": 16}
+            ]
+        },
+        "ls": {
+            "name": "2909c03",
+            "description": "Technic Shock Absorber 9L Soft Spring",
+            "lengthMin": 7, "lengthMax": 9,
+            "r1": 12, "r2": 1,
+            "screwBegin": 41,
+            "parts": [
+                {
+                    "name": "1 0 0 0 1 0 0 0 1 2910.dat",
+                    "color": 16,
+                    "p1": [0, 130, 0], "p2": [0, 40, 0]
+                }, {
+                    "name": "1 0 0 0 1 0 0 0 1 2909.dat",
+                    "color": 16,
+                    "p1": [0, 50, 0], "p2": [0, 0, 0]
+                }
+            ],
+            "conns": [
+                {
+                    "type": "0 PE_CONN 0 6",
+                    "rotate": "1 0 0 0 1 0 0 0 1",
+                    "p1": [0, 20, 0], "p2": [0, 0, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }, {
+                    "type": "0 PE_CONN 0 6",
+                    "rotate": "1 0 0 0 0 -1 0 1 0",
+                    "p1": [-20, 10, -10], "p2": [0, 0, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }, {
+                    "type": "0 PE_CONN 0 2",
+                    "rotate": "0 -1 0 0 0 -1 1 0 0",
+                    "p1": [0, 130, -10], "p2": [0, 40, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }
+            ],
+            "screws": [
+                {"f1": 0, "f2": 0, "l": 16},
+                {"f1": 0.125, "f2": 0, "l": 16},
+                {"f1": 0.28125, "f2": 0.20833, "l": 192},
+                {"f1": 0.125, "f2": 0, "l": 16},
+                {"f1": 0, "f2": 0, "l": 16}
+            ]
+        },
+        "lh": {
+            "name": "95292c01",
+            "description": "Technic Shock Absorber 9L Hard Spring",
+            "lengthMin": 7, "lengthMax": 9,
+            "r1": 12, "r2": 1,
+            "screwBegin": 41,
+            "parts": [
+                {
+                    "name": "1 0 0 0 1 0 0 0 1 2910.dat",
+                    "color": 0,
+                    "p1": [0, 130, 0], "p2": [0, 40, 0]
+                }, {
+                    "name": "1 0 0 0 1 0 0 0 1 2909.dat",
+                    "color": 16,
+                    "p1": [0, 50, 0], "p2": [0, 0, 0]
+                }
+            ],
+            "conns": [
+                {
+                    "type": "0 PE_CONN 0 6",
+                    "rotate": "1 0 0 0 1 0 0 0 1",
+                    "p1": [0, 20, 0], "p2": [0, 0, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }, {
+                    "type": "0 PE_CONN 0 6",
+                    "rotate": "1 0 0 0 0 -1 0 1 0",
+                    "p1": [-20, 10, -10], "p2": [0, 0, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }, {
+                    "type": "0 PE_CONN 0 2",
+                    "rotate": "0 -1 0 0 0 -1 1 0 0",
+                    "p1": [0, 130, -10], "p2": [0, 40, 0],
+                    "parameter": "0 0 0.8 0 0"
+                }
+            ],
+            "screws": [
+                {"f1": 0, "f2": 0, "l": 16},
+                {"f1": 0.125, "f2": 0, "l": 16},
+                {"f1": 0.675, "f2": 0.5, "l": 80},
+                {"f1": 0.125, "f2": 0, "l": 16},
+                {"f1": 0, "f2": 0, "l": 16}
+            ]
+        }
+    }
+
+    lengthSlide.oninput = function () {
+        lengthInput.value = lengthSlide.value;
+    }
+
+    lengthInput.onchange = function () {
+        if (lengthInput.value < lengthInput.min) lengthInput.value = lengthInput.min;
+        if (lengthInput.value > lengthInput.max) lengthInput.value = lengthInput.max;
+        lengthSlide.value = lengthInput.value;
+    }
+
+    document.getElementById("selectType").addEventListener("click", function (e) {
+        if (e.target.tagName === "INPUT") {
+            springType = e.target.value;
+            lengthSlide.max = lengthInput.max = springData[springType].lengthMax;
+            lengthSlide.min = lengthInput.min = springData[springType].lengthMin;
+            lengthInput.onchange(undefined);
+        }
+    })
+
+    function download(filename, text) {
+        let element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    }
+
+    document.getElementById("fileOutput").onclick = function () {
+        let data = springData[springType]
+        let text = "";
+        let compress = (lengthInput.value - data.lengthMin) / (data.lengthMax - data.lengthMin);
+        let filename = data.name + "(" + lengthInput.value + "L).part"
+        text += "0 FILE " + filename + "\n";
+        text += "0 Description: " + data.description + "\n";
+        text += "0 Generated by CrMo\n";
+        text += "0 BFC CERTIFY CCW\n";
+
+        data.parts.forEach(function (part) {
+            text += "1 " + part.color + " ";
+            for (let i = 0; i < 3; i++) {
+                text += String(part.p1[i] + compress * part.p2[i]) + " ";
+            }
+            text += part.name + "\n";
+        });
+
+        data.conns.forEach(function (conn) {
+            text += conn.type + " ";
+            text += conn.rotate + " ";
+            for (let i = 0; i < 3; i++) {
+                text += String(conn.p1[i] + compress * conn.p2[i]) + " ";
+            }
+            text += conn.parameter + "\n";
+        });
+
+        let phase = 0;
+        let curPos = data.screwBegin;
+
+        data.screws.forEach(function (screw) {
+            let angle;
+            let points = new Array(4);
+            let pointsNext = new Array(4);
+            for (let i = 0; i <= screw.l; i++) {
+                angle = phase / 8 * Math.PI;
+                pointsNext[0] = (-data.r1 * Math.cos(angle)).toFixed(4) + " "
+                    + (curPos + data.r2).toFixed(4) + " "
+                    + (data.r1 * Math.sin(angle)).toFixed(4) + " ";
+                pointsNext[1] = ((-data.r1 - data.r2) * Math.cos(angle)).toFixed(4) + " "
+                    + (curPos).toFixed(4) + " "
+                    + ((data.r1 + data.r2) * Math.sin(angle)).toFixed(4) + " ";
+                pointsNext[2] = (-data.r1 * Math.cos(angle)).toFixed(4) + " "
+                    + (curPos - data.r2).toFixed(4) + " "
+                    + (data.r1 * Math.sin(angle)).toFixed(4) + " ";
+                pointsNext[3] =( (-data.r1 + data.r2) * Math.cos(angle)).toFixed(4) + " "
+                    + (curPos).toFixed(4) + " "
+                    + ((data.r1 - data.r2) * Math.sin(angle)).toFixed(4) + " ";
+
+                if (i !== 0) {
+                    for (let j = 0; j < 4; j++) {
+                        text += "2 24 " + points[j] + pointsNext[j] + "\n";
+                        text += "3 494 " + points[j] + points[(j + 1) % 4] + pointsNext[j] + "\n";
+                        text += "3 494 " + points[(j + 1) % 4] + pointsNext[(j + 1) % 4] + pointsNext[j] + "\n";
+                    }
+                }
+                if (i !== screw.l) {
+                    Object.assign(points, pointsNext);
+                    phase = phase === 15 ? 0 : phase + 1;
+                    curPos += screw.f1 + compress * screw.f2;
+                }
+            }
+        });
+
+        download(filename, text);
+    }
+</script>
+</body>
+</html>
