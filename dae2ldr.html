@@ -136,7 +136,7 @@
             if (colorArr == null) colorStr = "#000000ff";
             else {
                 colorArr = colorArr.innerHTML.split(" ")
-                    .filter(item => item !== " ")
+                    .filter(item => item !== "")
                     .map(Number);
 
                 for (let j = 0; j < colorArr.length; j++) {
