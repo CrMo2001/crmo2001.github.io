@@ -291,6 +291,9 @@
             function parseMesh(mesh) {
                 let meshText = "";
                 let triangles = mesh.getElementsByTagName("triangles");
+				if (triangles.length === 0) {
+					triangles = mesh.getElementsByTagName("polylist");
+				}
                 for (let i = 0; i < triangles.length; i++) {
                     meshText += parseTriangle(triangles[i]);
                 }
